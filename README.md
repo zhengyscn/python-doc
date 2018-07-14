@@ -1,7 +1,3 @@
-# python-doc
-http://www.python.org/
-
-
 # Python Doc [![Doc](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/zhengyscn/python-doc)
 
 - [Python Doc](#python doc)
