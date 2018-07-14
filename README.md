@@ -2,9 +2,11 @@
 
 - Basic
     - [Install Python3.6](./basic/install_python3.6.md)
-- [html](#services)
-    - [Code Quality](#code-quality)
-    - [Continuous Integration](#continuous-integration)
+	- [Install pip](./basic/install_pip.md)
+- HCJ
+    - [Html]
+    - [Css]
+	- [JavaScript]
 - [Resources](#resources)
 
 - - -
