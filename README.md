@@ -1,4 +1,4 @@
-# Python Doc
+# Python3 Doc
 
 - Basic
     - [Install Python3.6](./basic/install_python3.6.md)
@@ -12,6 +12,8 @@
 	- [JavaScript]
 - Advanced stage
 	- [threading]
+- tools
+	- [ftp](./tools/ftp.md)
 
 - Web
     - [Django]
