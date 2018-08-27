@@ -12,7 +12,7 @@
 	- [JavaScript]
 - Advanced
 	- [threading]
-	- [file ctrl+c](./file/README.md)
+	- [file ctrl+c](./advanced/file/README.md)
 - tools
 	- [ftp](./tools/ftp.md)
 
