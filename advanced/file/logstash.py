@@ -3,9 +3,9 @@ import json
 import time
 
 '''小文件读取'''
-def readFile(filename):
+def readFile(FILENAME):
     try:
-        fd = open(filename, 'r')
+        fd = open(FILENAME, 'r')
         return fd.read(), True
     except Exception as e:
         return e.args, False
@@ -14,13 +14,13 @@ def readFile(filename):
             fd.close()
 
 '''通用 写文件'''
-def writeFile(filename, data):
+def writeFile(FILENAME, DATA):
     try:
-        fd = open(filename, 'w')
-        if isinstance(data, int):
-            return fd.write(str(data)), True
-        elif isinstance(data, list) or isinstance(data, dict):
-            return fd.write(json.dumps(data)), True
+        fd = open(FILENAME, 'w')
+        if isinstance(DATA, int):
+            return fd.write(str(DATA)), True
+        elif isinstance(DATA, list) or isinstance(DATA, dict):
+            return fd.write(json.dumps(DATA)), True
         else:
             return "file isinstance(data) match failed.", False
     except Exception as e:
@@ -30,12 +30,12 @@ def writeFile(filename, data):
             fd.close()
 
 '''获取文件指针'''
-def getFilePos(filename):
-    if not os.path.exists(filename):
-        os.makedirs(os.path.dirname(filename))
+def getFilePos(FILENAME):
+    if not os.path.exists(FILENAME):
+        os.makedirs(os.path.dirname(FILENAME))
         FILE_POS = 0
     else:
-        pid, ok = readFile(filename)
+        pid, ok = readFile(FILENAME)
         if ok:
             try:
                 FILE_POS = int(pid.strip())
