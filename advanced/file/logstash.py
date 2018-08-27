@@ -1,7 +1,8 @@
 import os
+import json
 import time
 
-
+'''小文件读取'''
 def readFile(filename):
     try:
         fd = open(filename, 'r')
@@ -12,33 +13,40 @@ def readFile(filename):
         if 'fd' in locals():
             fd.close()
 
-
+'''通用 写文件'''
 def writeFile(filename, data):
     try:
         fd = open(filename, 'w')
         if isinstance(data, int):
             return fd.write(str(data)), True
-        elif isinstance(data, list):
-            pass
+        elif isinstance(data, list) or isinstance(data, dict):
+            return fd.write(json.dumps(data)), True
+        else:
+            return "file isinstance(data) match failed.", False
     except Exception as e:
         return e.args, False
     finally:
         if 'fd' in locals():
             fd.close()
 
-
+'''获取文件指针'''
 def getFilePos(filename):
     if not os.path.exists(filename):
+        os.makedirs(os.path.dirname(filename))
         FILE_POS = 0
     else:
         pid, ok = readFile(filename)
         if ok:
-            FILE_POS = int(pid.strip())
+            try:
+                FILE_POS = int(pid.strip())
+            except:
+                # warn
+                FILE_POS = 0
         else:
             FILE_POS = 0
     return FILE_POS
 
-
+'''流式处理'''
 def fileStream(LOG_FILE, PID_FILE, FILE_POS):
     try:
         fd = open(LOG_FILE, 'r')
@@ -48,7 +56,7 @@ def fileStream(LOG_FILE, PID_FILE, FILE_POS):
             FILE_POS += len(line)
             time.sleep(0.3)
     except KeyboardInterrupt:
-        '''CTRL + C'''
+        '''捕获CTRL + C'''
         msg, ok = writeFile(PID_FILE, FILE_POS)
         if not ok:
             print(msg)
@@ -56,7 +64,7 @@ def fileStream(LOG_FILE, PID_FILE, FILE_POS):
         if 'fd' in locals():
             fd.close()
 
-
+'''入口函数'''
 def main():
     # print(__file__)
     # print(os.path.abspath(__file__))
