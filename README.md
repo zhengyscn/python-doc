@@ -10,8 +10,9 @@
     - [Html]
     - [Css]
 	- [JavaScript]
-- Advanced stage
+- Advanced
 	- [threading]
+	- [file ctrl+c](./file/README.md)
 - tools
 	- [ftp](./tools/ftp.md)
 
