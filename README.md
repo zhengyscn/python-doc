@@ -6,14 +6,10 @@
 	- [Virtualenv](./basic/virtualenv.md)
 	- [Print](./basic/print.md)
 	- [Encodings](https://www.python.org/dev/peps/pep-0263/)
-- HCJ
-    - [Html]
-    - [Css]
-	- [JavaScript]
 - Advanced
 	- [threading]
 	- [file ctrl+c](./advanced/file/)
-- tools
+- Tools
 	- [ftp](./tools/ftp.md)
 
 - Web
