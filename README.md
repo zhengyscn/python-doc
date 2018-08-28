@@ -5,7 +5,7 @@
 	- [Encodings](https://www.python.org/dev/peps/pep-0263/)
 	- [algorithm sort](./basic/sort/)
 - Advance
-	- [file ctrl+c](./advance/file/)
+	- [file tell](./advance/file/)
 - Tools
 	- [ftp](./tools/ftp.md)
 
