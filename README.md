@@ -1,7 +1,7 @@
 # Python3 Doc
 
 - Basic
-	- [Print](./basic/print.md)
+	- [Print](./basic/print)
 	- [Encodings](https://www.python.org/dev/peps/pep-0263/)
 	- [algorithm sort](./basic/sort/)
 - Advance
