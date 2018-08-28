@@ -32,7 +32,7 @@ def writeFile(filename, data):
 '''获取文件指针'''
 def getFilePos(filename):
     if not os.path.exists(filename):
-        os.makedirs(os.path.dirname(filename))
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
         FILE_POS = 0
     else:
         pid, ok = readFile(filename)
@@ -51,13 +51,15 @@ def fileStream(log_file, pid_file, file_pos):
     try:
         fd = open(log_file, 'r')
         fd.seek(file_pos)
-        for line in fd:
-            print(line, end="")
-            file_pos += len(line)
+        while True:
+            lineinfo = fd.readline()
+            print(lineinfo.strip("\n"))
             time.sleep(0.3)
+            if len(lineinfo) == 0:
+                break
     except KeyboardInterrupt:
         '''捕获CTRL + C'''
-        msg, ok = writeFile(pid_file, file_pos)
+        msg, ok = writeFile(pid_file, fd.tell())
         if not ok:
             print(msg)
     finally:
