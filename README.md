@@ -8,7 +8,7 @@
 	- [Encodings](https://www.python.org/dev/peps/pep-0263/)
 - Advanced
 	- [threading]
-	- [file ctrl+c](./advanced/file/)
+	- [file ctrl+c](./advance/file/)
 - Tools
 	- [ftp](./tools/ftp.md)
 
