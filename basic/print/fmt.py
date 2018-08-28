@@ -1,7 +1,4 @@
-
-
 '''
-
 def print(self, *args, sep=' ', end='\n', file=None): # known special case of print
     """
     print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
@@ -24,9 +21,3 @@ stderr -- standard error object; used for error messages
   By assigning other file objects (or objects that behave like files)
   to these, it is possible to redirect all of the interpreter's I/O.
 '''
-
-import sys
-
-n = sys.stdout.write("hello world!")
-
-

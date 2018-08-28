@@ -7,11 +7,9 @@ def println(value=None, sep="\n"):
     sys.stdout.write(sep)
     sys.stdout.flush()  # 强制刷新 否则将阻塞
 
-
 def inputln(prompt=None):
     println(prompt, sep="")
     return sys.stdin.readline() # Read until newline or EOF.
-
 
 def main():
     # println()
