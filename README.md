@@ -6,8 +6,10 @@
 	- [Virtualenv](./basic/virtualenv.md)
 	- [Print](./basic/print.md)
 	- [Encodings](https://www.python.org/dev/peps/pep-0263/)
-- Advanced
-	- [threading]
+	- [bubble sort](./sort/README.md)
+	- [quick sort](./sort/README.md)
+- Advance
+	- [nginx](./advance/nginx/)
 	- [file ctrl+c](./advance/file/)
 - Tools
 	- [ftp](./tools/ftp.md)
