@@ -3,7 +3,7 @@
 - Basic
 	- [Print](./basic/print.md)
 	- [Encodings](https://www.python.org/dev/peps/pep-0263/)
-	- [algorithm sort](./basic/sort/README.md)
+	- [algorithm sort](./basic/sort/)
 - Advance
 	- [file ctrl+c](./advance/file/)
 - Tools
