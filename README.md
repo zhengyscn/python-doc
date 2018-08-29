@@ -2,6 +2,8 @@
 
 - Basic
 	- [Print](./basic/print)
+	- [signal](./basic/signal)
+	- [configparse](./basic/configparse)
 	- [algorithm sort](./basic/sort/)
 - Advance
 	- [file tell](./advance/file/)
@@ -12,5 +14,3 @@
 - Web
     - [Django]
     - [DRF]
-
-- - -
