@@ -6,6 +6,7 @@
 	- [algorithm sort](./basic/sort/)
 - Advance
 	- [file tell](./advance/file/)
+	- [ngxlog](./advance/ngxlog/)
 - Tools
 	- [ftp](./tools/ftp.md)
 
