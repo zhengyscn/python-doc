@@ -3,6 +3,7 @@
 - Basic
 	- [Print](./basic/print)
 	- [signal](./basic/signal)
+	- [os](./basic/os)
 	- [configparse](./basic/configparse)
 	- [algorithm sort](./basic/sort/)
 - Advance
