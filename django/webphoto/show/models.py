@@ -3,6 +3,7 @@ from .storage import ImageStorage, BackgroundStorage
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
+from django.utils.html import format_html
 
 
 class Photo(models.Model):
@@ -23,8 +24,10 @@ class Photo(models.Model):
 
 
     def image_view(self):
-        return u'<img src="%s" height="200px"/>' % (settings.MEDIA_URL + str(self.img_upload))
+        # return u'<img src="%s" height="40"/>' % (settings.MEDIA_URL + str(self.img_upload))
+        return format_html(u'<img src="%s" height="40"/>' % (settings.MEDIA_URL + str(self.img_upload)))
 
+    # 页面显示的字段名称
     image_view.short_description = '图片展示'
     image_view.allow_tags = True
 

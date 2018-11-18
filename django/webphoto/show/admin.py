@@ -53,6 +53,7 @@ class PhotoAdmin(admin.ModelAdmin):
             'img_group',
             'like_count',
             'display',
+            'image_view',
             'create_time',
             'update_time'
     )
@@ -67,6 +68,8 @@ class PhotoAdmin(admin.ModelAdmin):
         'img_upload',
         'image_view'
     )
+
+    # readonly_fields为设置该列不可编辑
     readonly_fields = ('image_view', 'update_time')
 
 

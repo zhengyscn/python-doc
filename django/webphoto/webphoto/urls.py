@@ -16,12 +16,13 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+
 from django.conf import settings
 from django.conf.urls.static import static
 from show.views import PhotoListView
 
 
-
+# https://docs.djangoproject.com/en/1.11/ref/urls/
 urlpatterns = [
       url(r'^admin/', admin.site.urls),
       url(r'^$', PhotoListView.as_view()),
