@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block aside %}
+    {% include 'aside.html' %}
+{% endblock %}
+{% block content %}
+    <div class="stack-slider">
+        <div class="stacks-wrapper">
+            {% for groupname, photos in object_list.items %}
+                <div class="stack">
+                    <h2 class="stack-title"><a href="#" data-text="{{ groupname }}"><span>{{ groupname }}</span></a>
+                    </h2>
+                    {% if photos %}
+                        {% for photo in photos %}
+                            <div class="item">
+                                <div class="item__content">
+                                    <img src="data/upload/{{ photo.img_upload }}" alt="{{ photo.img_title }}"/>
+                                    <h3 class="item__title">{{ photo.img_title }} <span
+                                            class="item__date">{{ photo.create_time }}</span>
+                                    </h3>
+                                    <div class="item__details">
+                                        <ul class="left-context">
+                                            <li>
+                                                <i class="icon-leaf"></i>
+                                                <span> {{ photo.img_context }}</span>
+                                            </li>
+                                            <li class="like">
+                                                <i class="icon-heart"></i>
+                                                <span> {{ photo.like_count }}</span>
+                                            </li>
+                                            <li>
+                                                <i class="icon-tags"></i>
+                                                {% for tag in photo.img_tags.all %}
+                                                    <span> {{ tag }} </span>
+                                                {% endfor %}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="item__content">
+                            <h3>这个相册没有图片</h3>
+                        </div>
+                    {% endif %}
+                </div>
+
+            {% endfor %}
+        </div>
+        <!-- /stacks-wrapper -->
+    </div>
+{% endblock %}

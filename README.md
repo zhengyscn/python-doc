@@ -13,5 +13,4 @@
 	- [ftp](./ftp.md)
 
 - Web
-    - [Django]
-    - [DRF]
+    - [Django](./django)
