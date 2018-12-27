@@ -2,7 +2,7 @@
 
 - Basic
     - [print](./print)
-    - [tail](./file)
+    - [tail](./tail)
     - [hash](./hash)
     - [configparse](./configparse)
     - [iter](./iter)
