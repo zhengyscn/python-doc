@@ -14,7 +14,7 @@
     - [signal](./signal)
     - [sort](./sort)
     - [nginxlog](./nginxlog/)
-    - [ftp](./ftp.md)
+    - [ftp](./ftp)
 
 - Web
     - [Django](./django)
