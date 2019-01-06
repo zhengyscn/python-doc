@@ -7,12 +7,9 @@
 - Basic
     - [print](./print)
     - [tail](./tail)
-    - [hash](./hash)
-    - [configparse](./configparse)
     - [iter](./iter)
-    - [os](./os)
     - [signal](./signal)
-    - [sort](./sort)
+    - [algorithm](./algorithm)
     - [nginxlog](./nginxlog/)
     - [ftp](./ftp)
 
