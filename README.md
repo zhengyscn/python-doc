@@ -13,5 +13,5 @@
     - [nginxlog](./nginxlog/)
     - [ftp](./ftp)
 
-- Web
+- Web framework
     - [Django](./django)
