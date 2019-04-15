@@ -91,6 +91,6 @@ Python 3.6.8
 ```
 
 
-### 2.1. IDE
+### 2.2. IDE
 
 - [Pycharm Download](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=mac)
