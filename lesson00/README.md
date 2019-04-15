@@ -35,9 +35,16 @@
 # mkae install
 ```
 
+> 环境变量
+```bash
+# echo "export PATH=/usr/local/python36/bin:\$PATH" > /etc/profile.d/python36.sh
+# source /etc/profile
+```
+
 > 测试
 ```bash
-# python -V
+# python3 -V
+Python 3.6.8
 ```
 
 ### 1.3. IDE
@@ -57,7 +64,7 @@
 - [Mac Download](https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz)
 
 
-> 安装
+> Mac安装
 ```bash
 # yum install gcc gcc-c++ make openssl openssl-devel
 # cd /usr/local/src
@@ -69,9 +76,16 @@
 # mkae install
 ```
 
+> 环境变量
+```bash
+# echo "export PATH=/usr/local/python36/bin:\$PATH" > /etc/profile.d/python36.sh
+# source /etc/profile
+```
+
 > 测试
 ```bash
-# python -V
+# python3 -V
+Python 3.6.8
 ```
 
 
