@@ -14,7 +14,7 @@
 
 ### 1.1 安装虚拟机
 
-> Virtualbox是一款虚拟机软件(类似于Vmware)，Vagrant是Virtualbox的命令行管理工具；
+> Virtualbox是一款虚拟机软件(类似于Vmware)，Vagrant是Virtualbox的命令行管理工具, Box是虚拟机镜像；
 
 - [Virtualbox Download](https://download.virtualbox.org/virtualbox/5.2.26/VirtualBox-5.2.26-128414-Win.exe)
 - [Box Centos6.6](https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.0.0/centos-6.6-x86_64.box)
@@ -60,7 +60,6 @@ Python 3.6.8
 
 
 ## 2. Mac系统
-
 
 
 ### 2.1. Python 3.6
