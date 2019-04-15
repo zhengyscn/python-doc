@@ -2,11 +2,11 @@
 
 ```bash
 开课前环境准备
-1. 如果你用的Windows系统，建议在Windows上安装虚拟机，在虚拟机上安装Linux系统，Linux系统上运行Python环境；
-2. 如果你用的是Mac系统，那么可以直接在Mac上运行Python环境；
-3. 虚拟机建议用Virtualbox + Vagrant, 为什么要用这款软件了？？？ 
-3.1 这款软件能够实现Windows下项目代码和Linux系统共享；
-3.2 Pycharm支持无缝连接Virtualbox的Python环境；
+- 1. 如果你用的Windows系统，建议在Windows上安装虚拟机，在虚拟机上安装Linux系统，Linux系统上运行Python环境；
+- 2. 如果你用的是Mac系统，那么可以直接在Mac上运行Python环境；
+- 3. 虚拟机建议用Virtualbox + Vagrant, 为什么要用这款软件了？？？ 
+- 3.1 这款软件能够实现Windows下项目代码和Linux系统共享；
+- 3.2 Pycharm支持连接Virtualbox里的Python环境；
 ```
 
 ## 1. Windows系统
