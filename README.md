@@ -5,7 +5,7 @@
     - [Python2.7](https://github.com/467754239/python)
 
 - 51reboot
-    - [lesson00](./lesson00)
+    - [lesson0](./lesson0)
 
 - Basic
     - [tail](./tail)
