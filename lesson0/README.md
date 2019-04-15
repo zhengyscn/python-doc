@@ -22,6 +22,11 @@
 
 - [Box List](http://www.vagrantbox.es/)
 
+> 1. 首先安装Virtualbox
+
+xxx
+
+
 ### 1.2. Python 3.6
 - [Linux Download](https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz)
 
