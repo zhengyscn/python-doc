@@ -33,7 +33,9 @@ xxx
 
 > 1.1.3. Vagrant命令行方式创建虚拟机，如下图表示安装成功；
 
+```bash
 xxx
+```
 
 ### 1.2. Python 3.6
 - [Linux Download](https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz)
