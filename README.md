@@ -1,13 +1,8 @@
 # Python3 Doc
 
-
-- Python2.7 
-    - [Python2.7](https://github.com/467754239/python)
-
-- 51reboot
-    - [lesson](./lesson)
-
 - Basic
+    - [Python2.7](https://github.com/467754239/python)
+    - [51reboot](./51reboot)
     - [tail](./tail)
     - [iter](./iter)
     - [signal](./signal)
