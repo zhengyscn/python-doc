@@ -38,11 +38,6 @@ xxx
 ### 1.2. Python 3.6
 - [Linux Download](https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz)
 
-
-- Pycharm设置连接Vagrant虚拟机的Python环境，如下图；
-
-xxx
-
 > Linux安装
 ```bash
 # yum install gcc gcc-c++ make openssl openssl-devel
@@ -71,7 +66,10 @@ Python 3.6.8
 
 - [Pycharm Download](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows)
 
-- 配置
+
+- Pycharm设置连接Vagrant虚拟机的Python环境，如下图；
+
+xxx
 
 
 
@@ -80,26 +78,13 @@ Python 3.6.8
 
 
 ### 2.1. Python 3.6
-- [Mac Download](https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz)
+- [Mac Download](https://www.python.org/ftp/python/3.6.8/python-3.6.8-macosx10.9.pkg)
 
 
 > Mac安装
-```bash
-# yum install gcc gcc-c++ make openssl openssl-devel
-# cd /usr/local/src
-# wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
-# tar -zxvf Python-3.6.8.tgz
-# cd Python-3.6.8
-# ./configure --prefix=/usr/local/python36
-# make -j
-# mkae install
-```
 
-> 环境变量
-```bash
-# echo "export PATH=/usr/local/python36/bin:\$PATH" > /etc/profile.d/python36.sh
-# source /etc/profile
-```
+把上面下载好的Python 3.6软件包进行安装，一路点击下一步，即可。
+
 
 > 测试
 ```bash
