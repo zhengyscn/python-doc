@@ -87,7 +87,7 @@ Python 3.6.8
 
 ### 1.3. IDE
 
-1.3.1 下载Pycharm
+1.3.1 下载Pycharm 2019
 
 - [Pycharm Download](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows)
 
@@ -129,5 +129,7 @@ Python 3.6.8
 
 
 ### 2.2. IDE
+
+2.2.1 下载Pycharm 2019
 
 - [Pycharm Download](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=mac)
