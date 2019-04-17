@@ -28,24 +28,15 @@
 - [Vagrant Download](https://releases.hashicorp.com/vagrant/2.2.4/vagrant_2.2.4_x86_64.msi)
 
 
-> 1.1.3. Vagrant命令行方式创建虚拟机，如下图表示安装成功；
+> 1.1.3. Vagrant命令行方式创建虚拟机；
 
 - [Box List](http://www.vagrantbox.es/)
 - [Box Centos6.6](https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.0.0/centos-6.6-x86_64.box)
 
 
-1.1.3.1 验证Vagrant安装成功
-
-> 进入Windows下的CMD命令行，执行如下命令，如果显示帮助信息表明成功。
-
-![Vagrant1](../../51reboot/imgs/vagrant1.png)
-![Vagrant2](../../51reboot/imgs/vagrant2.png)
-![Vagrant3](../../51reboot/imgs/vagrant3.png)
-![Vagrant4](../../51reboot/imgs/vagrant4.png)
-
+1.1.3.1 Vagrant常用命令
 
 ```bash
-Vagrant常用命令
 1. vagrant box list  // 列出当前导入的Box
 2. vagrant up        // 启动虚拟机
 3. vagrant halt      // 关闭虚拟机
@@ -54,8 +45,21 @@ Vagrant常用命令
 6. vagrant box add <BoxPath>  // 添加box
 ```
 
+1.1.3.2 进入Windows下的CMD命令行，使用Vagrant命令行工具来启动一台虚拟机。
+
+![Vagrant1](../../51reboot/imgs/vagrant1.png)
+![Vagrant2](../../51reboot/imgs/vagrant2.png)
+![Vagrant3](../../51reboot/imgs/vagrant3.png)
+![Vagrant4](../../51reboot/imgs/vagrant4.png)
+
+
+1.1.3.3 使用xshell连接上Virtualbox虚拟机
+![Xshell Connect1 vm](../../51reboot/imgs/vagrant5-xshell.png)
+![Xshell Connect2 vm](../../51reboot/imgs/vagrant6-xshell.png)
+![Xshell Connect2 vm](../../51reboot/imgs/vagrant7-xshell.png)
+
+
 ### 1.2. Python 3.6
-- [Linux Download](https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz)
 
 > Linux安装
 ```bash
