@@ -87,14 +87,30 @@ Python 3.6.8
 
 ### 1.3. IDE
 
+1.3.1 下载Pycharm
+
 - [Pycharm Download](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows)
 
 
-- Pycharm设置连接Vagrant虚拟机的Python环境，如下图；
 
-xxx
+1.3.2 安装Pycharm
+
+- [注册码地址](http://idea.lanyus.com)
+
+![Pycharm1](../../51reboot/imgs/pycharm1.jpg)
+![Pycharm1](../../51reboot/imgs/pycharm3.png)
 
 
+1.3.3 Pycharm设置连接Vagrant虚拟机的Python环境，如下图；
+
+![Pycharm1](../../51reboot/imgs/pycharm4.png)
+![Pycharm1](../../51reboot/imgs/pycharm5.png)
+![Pycharm1](../../51reboot/imgs/pycharm6.png)
+![Pycharm1](../../51reboot/imgs/pycharm7.png)
+![Pycharm1](../../51reboot/imgs/pycharm8.png)
+![Pycharm1](../../51reboot/imgs/pycharm9.png)
+![Pycharm1](../../51reboot/imgs/pycharm10.png)
+![Pycharm1](../../51reboot/imgs/pycharm11.png)
 
 
 ## 2. Mac系统
