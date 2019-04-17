@@ -79,7 +79,7 @@
 # source /etc/profile
 ```
 
-> 测试
+> 测试版本
 ```bash
 # python3 -V
 Python 3.6.8
@@ -121,9 +121,7 @@ Python 3.6.8
 - [Mac Download](https://www.python.org/ftp/python/3.6.8/python-3.6.8-macosx10.9.pkg)
 
 
-
-
-> 测试
+> 测试版本
 ```bash
 # python3 -V
 Python 3.6.8
