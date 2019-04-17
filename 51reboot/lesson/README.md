@@ -38,7 +38,21 @@
 
 > 进入Windows下的CMD命令行，执行如下命令，如果显示帮助信息表明成功。
 
-![Vagrant install success](../../imgs/vagrant1.png)
+![Vagrant1](../../51reboot/imgs/vagrant1.png)
+![Vagrant2](../../51reboot/imgs/vagrant2.png)
+![Vagrant3](../../51reboot/imgs/vagrant3.png)
+![Vagrant4](../../51reboot/imgs/vagrant4.png)
+
+
+```bash
+Vagrant常用命令
+1. vagrant box list  // 列出当前导入的Box
+2. vagrant up        // 启动虚拟机
+3. vagrant halt      // 关闭虚拟机
+4. vagrant status    // 查看虚拟机的状态
+5. vagrant init      // 初始化虚拟机
+6. vagrant box add <BoxPath>  // 添加box
+```
 
 ### 1.2. Python 3.6
 - [Linux Download](https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz)
