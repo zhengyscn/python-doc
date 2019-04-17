@@ -116,13 +116,11 @@ Python 3.6.8
 ## 2. Mac系统
 
 
-### 2.1. Python 3.6
+### 2.1. Mac安装Python 3.6
+
 - [Mac Download](https://www.python.org/ftp/python/3.6.8/python-3.6.8-macosx10.9.pkg)
 
 
-> Mac安装
-
-把上面下载好的Python 3.6软件包进行安装，一路点击下一步，即可。
 
 
 > 测试
