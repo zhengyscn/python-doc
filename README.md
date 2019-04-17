@@ -1,8 +1,8 @@
 # Python3 Doc
 
 - Basic
-    - [Python2.7](https://github.com/467754239/python)
     - [51reboot](./51reboot)
+    - [Python2.7](https://github.com/467754239/python)
     - [tail](./tail)
     - [iter](./iter)
     - [signal](./signal)
