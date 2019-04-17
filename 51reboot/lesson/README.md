@@ -16,26 +16,29 @@
 
 > Virtualbox是一款虚拟机软件(类似于Vmware)，Vagrant是Virtualbox的命令行管理工具, Box是虚拟机镜像；
 
+
+> 1.1.1. 首先安装Virtualbox；
+
 - [Virtualbox Download](https://download.virtualbox.org/virtualbox/5.2.26/VirtualBox-5.2.26-128414-Win.exe)
-- [Box Centos6.6](https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.0.0/centos-6.6-x86_64.box)
-- [Vagrant Download](https://releases.hashicorp.com/vagrant/2.2.4/vagrant_2.2.4_x86_64.msi)
 
-- [Box List](http://www.vagrantbox.es/)
-
-> 1.1.1. 首先安装Virtualbox, 如下图表示安装成功；
-
-xxx
 
 
 > 1.1.2. 安装Vagrant，如下图表示安装成功；
 
-xxx
+- [Vagrant Download](https://releases.hashicorp.com/vagrant/2.2.4/vagrant_2.2.4_x86_64.msi)
+
 
 > 1.1.3. Vagrant命令行方式创建虚拟机，如下图表示安装成功；
 
-```bash
-xxx
-```
+- [Box List](http://www.vagrantbox.es/)
+- [Box Centos6.6](https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.0.0/centos-6.6-x86_64.box)
+
+
+1.1.3.1 验证Vagrant安装成功
+
+> 进入Windows下的CMD命令行，执行如下命令，如果显示帮助信息表明成功。
+
+![Vagrant install success](../../imgs/vagrant1.png)
 
 ### 1.2. Python 3.6
 - [Linux Download](https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz)
