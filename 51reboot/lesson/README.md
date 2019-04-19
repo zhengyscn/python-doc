@@ -32,6 +32,7 @@
 
 - [Box List](http://www.vagrantbox.es/)
 - [Box Centos6.6](https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.0.0/centos-6.6-x86_64.box)
+- [Box Centos6.6 (aliyun oss)](https://51reboot.oss-cn-beijing.aliyuncs.com/%E8%AE%AD%E7%BB%83%E8%90%A51%E6%9C%9F/%E8%BD%AF%E4%BB%B6%E5%8C%85/centos-6.6-x86_64.box)
 
 
 1.1.3.1 Vagrant常用命令
