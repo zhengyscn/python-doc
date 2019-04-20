@@ -55,6 +55,7 @@
 
 
 1.1.3.3 使用xshell连接上Virtualbox虚拟机
+> 登陆用户名 root，登陆密码 vagrant，ssh端口 2222
 ![Xshell Connect1 vm](../../51reboot/imgs/vagrant5-xshell.png)
 ![Xshell Connect2 vm](../../51reboot/imgs/vagrant6-xshell.png)
 ![Xshell Connect2 vm](../../51reboot/imgs/vagrant7-xshell.png)
