@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "centos-6.6-x86_64"
+  config.vm.box = "centos-6.6-x86_64"  # *** 镜像的名称
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   # config.vm.network "forwarded_port", guest: 80, host: 8080
-  config.vm.network "forwarded_port", guest: 8000, host: 8000
+  config.vm.network "forwarded_port", guest: 8000, host: 8000   # *** 虚拟机里的8000端口映射到宿主机的8000端口
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -39,7 +39,7 @@ Vagrant.configure("2") do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-  config.vm.synced_folder "D:/51reboot-vm", "/home/vagrant/51reboot"
+  config.vm.synced_folder "D:/51reboot-vm", "/home/vagrant/51reboot"   # *** 同步文件
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -70,6 +70,6 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
-  config.vm.boot_timeout = 300
-  config.vm.hostname = "51reboot"
+  config.vm.boot_timeout = 300     # *** 超时时间
+  config.vm.hostname = "51reboot"  # *** 设置主机名
 end
