@@ -48,6 +48,8 @@
 
 1.1.3.2 进入Windows下的CMD命令行，使用Vagrant命令行工具来启动一台虚拟机。
 
+- [Vagrantfile](./Vagrantfile)
+
 ![Vagrant1](../../51reboot/imgs/vagrant1.png)
 ![Vagrant2](../../51reboot/imgs/vagrant2.png)
 ![Vagrant3](../../51reboot/imgs/vagrant3.png)
