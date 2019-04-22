@@ -5,8 +5,8 @@
 - 1. 如果你用的Windows系统，建议在Windows上安装虚拟机，在虚拟机上安装Linux系统，Linux系统上运行Python环境；
 - 2. 如果你用的是Mac系统，那么可以直接在Mac上运行Python环境；
 - 3. 虚拟机建议用Virtualbox + Vagrant, 为什么要用这款软件了？？？ 
-- 3.1 这款软件能够实现Windows下项目代码和Linux系统共享；
-- 3.2 Pycharm支持连接Virtualbox里的Python环境；
+- 3.1 能够实现Windows下项目代码实时同步到Linux系统；
+- 3.2 Pycharm默认支持连接Virtualbox里的Python环境；
 ```
 
 ## 1. Windows系统
@@ -50,6 +50,14 @@
 
 > 替换自动生成的Vagrantfile配置文件
 - [Vagrantfile](./Vagrantfile)
+
+```bash
+## 大概需要修改以下四处
+config.vm.box = "centos-6.6-x86_64"    // 镜像的名称，但不包括扩展名。
+config.vm.synced_folder "D:/51reboot-vm", "/home/vagrant/51reboot"  // 同步Windows下的文件夹到Linux上
+config.vm.boot_timeout = 300           // 超时时间
+config.vm.hostname = "51reboot"        // 设置主机名
+```
 
 ![Vagrant1](../../51reboot/imgs/vagrant1.png)
 ![Vagrant2](../../51reboot/imgs/vagrant2.png)
