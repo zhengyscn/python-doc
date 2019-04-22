@@ -48,6 +48,7 @@
 
 1.1.3.2 进入Windows下的CMD命令行，使用Vagrant命令行工具来启动一台虚拟机。
 
+> 替换自动生成的Vagrantfile配置文件
 - [Vagrantfile](./Vagrantfile)
 
 ![Vagrant1](../../51reboot/imgs/vagrant1.png)
