@@ -76,7 +76,7 @@
 # cd Python-3.6.8
 # ./configure --prefix=/usr/local/python36
 # make -j
-# mkae install
+# make install
 ```
 
 > 环境变量
