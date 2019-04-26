@@ -44,6 +44,8 @@
 4. vagrant status    // 查看虚拟机的状态
 5. vagrant init      // 初始化虚拟机
 6. vagrant box add <BoxPath>  // 添加box
+7. vboxmanage list vms   // 列出虚拟机
+8. vagrant package --base vagrant_default_14950229427359_60979 --output soft/python36env_goenv_20180310.box  // 导出
 ```
 
 1.1.3.2 进入Windows下的CMD命令行，使用Vagrant命令行工具来启动一台虚拟机。
