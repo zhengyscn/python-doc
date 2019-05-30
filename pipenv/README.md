@@ -9,6 +9,11 @@ pipenv
     同时生成Pipfile.lock来锁定安装包的版本和依赖信息, 避免构建错误.
 ```
 
+- 安装
+```angular2
+$ pip3 install pipenv
+```
+
 - 常用命令
 ```bash
 // 可以初始化一个python3的虚拟环境
