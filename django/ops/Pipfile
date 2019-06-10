@@ -1,0 +1,15 @@
+[[source]]
+name = "pypi"
+url = "http://pypi.douban.com/simple"
+verify_ssl = false 
+
+[dev-packages]
+
+[packages]
+django = "==1.11"
+pytz = "*"
+pymysql = "*"
+ipython = "*"
+
+[requires]
+python_version = "3.6"

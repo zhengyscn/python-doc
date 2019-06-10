@@ -13,4 +13,5 @@
     - [Interview questions](./interview_questions)
 
 - Web framework
-    - [Django](./django)
+    - [Django webphoto](./django/webphoto)
+    - [Django ops](./django/ops)

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+</head>
+<body>
+
+    <div style="float: right">
+        <a href="/user/logout/">退出</a>
+    </div>
+
+    <div>
+        <div>
+            <h1 align="center" style="color: green">用户列表</h1>
+        </div>
+        <div align="center">
+            <button style="width: 100px; height: 25px">
+                <a href="/user/add/" >添加用户</a>
+            </button>
+        </div>
+        <div>
+            <table border="1" align="center" width="900">
+                <thead>
+                    <td>#</td>
+                    <td>用户名</td>
+                    <td>年龄</td>
+                    <td>性别</td>
+                    <td>电话</td>
+                    <td>地址</td>
+                    <td>创建时间</td>
+                    <td>更新时间</td>
+                    <td>操作</td>
+                </thead>
+                {% for obj in users %}
+                    <tbody>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ obj.username }}</td>
+                        <td>{{ obj.age }}</td>
+                        <td>{{ obj.sex }}</td>
+                        <td>{{ obj.phone }}</td>
+                        <td>{{ obj.address }}</td>
+                        <td>{{ obj.create_time }}</td>
+                        <td>{{ obj.update_time }}</td>
+                        <td>
+                            <button>
+                                <a href="/user/delete/{{ obj.pk }}">删除</a>
+                            </button>
+                            <button>修改</button>
+                        </td>
+                    </tbody>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
