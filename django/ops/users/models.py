@@ -4,8 +4,8 @@ from django.db import models
 
 class Users(models.Model):
     SEX_CHOICES = (
-        ('male', '男'),
-        ('female', '女'),
+        ('男', '男'),
+        ('女', '女'),
         # ('存储的值', '显示的值')
     )
 

@@ -36,7 +36,7 @@ def UserCreateView(request):
             errMsg = "Create user err, msg: {}".format(e.args)
             print(errMsg)
             context = {'code' : -1, 'msg' : errMsg}
-            return render(request, 'user_add.html', context)
+            return render(request, 'user_add.html', context=context)
         return redirect('/users/list/')
 
 def UserListView(request):
@@ -58,10 +58,21 @@ def UserDeleteView(request, pk):
         else:
             obj.delete()
             context['msg'] = "Delete succ"
-        return render(request, 'users.html', context)
+        return redirect("/users/list/")
 
-def UserUpdateView(request):
-    pass
+def UserUpdateView(request, pk):
+
+    if request.method == 'GET':
+        obj = Users.objects.get(pk=pk)
+        return render(request, 'user_update.html', context={'obj' : obj})
+
+    elif request.method == 'POST':
+        data = request.POST.dict()
+        data.pop("username", None)
+        Users.objects.filter(pk=pk).update(**data)
+        return redirect("/users/list/")
+
+
 
 '''导出csv
 '''

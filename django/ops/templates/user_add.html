@@ -8,12 +8,19 @@
     <div align="center">
         <form method="post" action="/user/add/">
             用户名: <input type="text" name="username"><br>
-            性别: <input type="text" name="sex"><br>
+            性别:   <select name="sex">
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                   </select><br>
             年龄: <input type="text" name="age"><br>
 
             电话: <input type="text" name="phone"><br>
             地址: <input type="text" name="address"><br>
-            <input type="submit" value="提交">
+            <input type="submit" value="提交"><br>
+
+            {% if code == -1 %}
+                <h3 style="color: red">{{ msg }}</h3>
+            {% endif %}
         </form>
     </div>
 </body>

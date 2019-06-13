@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+</head>
+<body>
+    <div align="center">
+        <form method="post" action="/user/update/{{ obj.pk }}">
+            用户名: <input type="text" name="username" value="{{ obj.username }}" readonly><br>
+            性别:   <select name="sex" >
+                        {% if obj.sex == "男" %}
+                            <option value="男" selected>男</option>
+                        {%  else %}
+                            <option value="男">男</option>
+                        {% endif %}
+
+                        {% if obj.sex == "女" %}
+                            <option value="女" selected>女</option>
+                        {%  else %}
+                            <option value="女">女</option>
+                        {% endif %}
+                   </select><br>
+            年龄: <input type="text" name="age" value="{{ obj.age }}"><br>
+
+            电话: <input type="text" name="phone" value="{{ obj.phone }}"><br>
+            地址: <input type="text" name="address" value="{{ obj.address }}"><br>
+            <input type="submit" value="提交">
+            {{ obj.sex }}
+        </form>
+    </div>
+</body>
+</html>

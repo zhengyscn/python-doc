@@ -19,7 +19,7 @@ from django.contrib import admin
 from hello.views import hello, SumInputViewV1, CommandViewV1
 from hello.views import SumInputViewV2, CommandViewV2
 from hello.views import LoginPageView, loginCheckView
-from users.views import UserLoginView, UserLogoutView, UserListView, UserCreateView, UserDeleteView
+from users.views import UserLoginView, UserLogoutView, UserListView, UserCreateView, UserDeleteView, UserUpdateView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -39,11 +39,14 @@ urlpatterns = [
     url(r'^hello/login/$', LoginPageView),
     url(r'^hello/login_check/$', loginCheckView),
 
-    # users
+    # login
     url(r'^user/login/', UserLoginView),
     url(r'^user/logout/', UserLogoutView),
+
+    # add delete udpate list
     url(r'^user/add/', UserCreateView),
     url(r'^user/delete/(?P<pk>\d+)', UserDeleteView),
+    url(r'^user/update/(?P<pk>\d+)', UserUpdateView),
     url(r'^users/list/', UserListView),
 
 ]
