@@ -9,7 +9,7 @@ async def simple_async():
 
 
 # 使用asynio中run方法运行一个协程
-asyncio.run(simple_async())
+asyncio.run(simple_async(), True)
 
 # 执行结果为
 # hello
