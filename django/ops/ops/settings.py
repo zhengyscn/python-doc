@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # application
     'hello',
     'users',
+    'dj_pagination',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +52,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # new add
+    'dj_pagination.middleware.PaginationMiddleware',
 ]
 
 ROOT_URLCONF = 'ops.urls'
@@ -144,3 +147,11 @@ DATETIME_FORMAT = 'Y-m-d H:i:s'
 
 
 # APPEND_SLASH=False
+
+TEMPLATE_CONTEXT_PROCESSORS =(
+    "django.core.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.request"
+)

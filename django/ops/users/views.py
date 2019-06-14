@@ -43,7 +43,7 @@ def UserListView(request):
 
     if request.method == 'GET':
         objs = Users.objects.all()
-        return render(request, 'users.html', context={'users' : objs})
+        return render(request, 'users.html', context={'object_list' : objs})
 
 def UserDeleteView(request, pk):
 

@@ -10,6 +10,7 @@ django = "==1.11"
 pytz = "*"
 pymysql = "*"
 ipython = "*"
+dj-pagination = "*"
 
 [requires]
 python_version = "3.6"
