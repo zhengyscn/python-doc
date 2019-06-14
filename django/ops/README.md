@@ -1,9 +1,13 @@
 # ops
+ 
 
-- venv
-> pipenv   
+- Install Package
+```bash
+$ pipenv lock
+$ pipenv install --ignore-pipfile
+```
 
-- Run Server
-```angular2
-$ pipenv run python manage.py runserver
+- Run server
+```bash
+$ pipenv run python manage.py runserver 0.0.0.0:8000
 ```
