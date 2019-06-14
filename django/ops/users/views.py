@@ -8,8 +8,10 @@ from .models import Users
 
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import redirect
+from django.views.decorators.http import require_http_methods
 
 
+@require_http_methods(['GET','POST'])
 def UserLoginView(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -19,10 +21,11 @@ def UserLoginView(request):
     else:
         return render(request, 'user_login.html')
 
-
+@require_http_methods(['GET'])
 def UserLogoutView(request):
     return redirect("/user/login/")
 
+@require_http_methods(['GET','POST'])
 def UserCreateView(request):
 
     if request.method == 'GET':
@@ -39,12 +42,14 @@ def UserCreateView(request):
             return render(request, 'user_add.html', context=context)
         return redirect('/users/list/')
 
+@require_http_methods(['GET'])
 def UserListView(request):
 
     if request.method == 'GET':
         objs = Users.objects.all()
         return render(request, 'users.html', context={'object_list' : objs})
 
+@require_http_methods(['GET'])
 def UserDeleteView(request, pk):
 
     if request.method == 'GET':
@@ -60,6 +65,7 @@ def UserDeleteView(request, pk):
             context['msg'] = "Delete succ"
         return redirect("/users/list/")
 
+@require_http_methods(['GET','POST'])
 def UserUpdateView(request, pk):
 
     if request.method == 'GET':
@@ -76,6 +82,7 @@ def UserUpdateView(request, pk):
 
 '''导出csv
 '''
+@require_http_methods(['GET'])
 def UserExportCsvView(request):
     # Create the HttpResponse object with the appropriate CSV header.
     cur_time = datetime.datetime.now().strftime("%Y-%m-%d")
