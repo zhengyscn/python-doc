@@ -21,6 +21,10 @@ from hello.views import SumInputViewV2, CommandViewV2
 from hello.views import LoginPageView, loginCheckView
 from users.views import UserLoginView, UserLogoutView, UserListView, UserCreateView, UserDeleteView, UserUpdateView
 
+
+from school.views import SchoolView
+
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
@@ -49,4 +53,6 @@ urlpatterns = [
     url(r'^user/update/(?P<pk>\d+)', UserUpdateView),
     url(r'^users/list/', UserListView),
 
+    # school
+    url(r'^school/', SchoolView),
 ]

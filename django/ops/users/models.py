@@ -15,6 +15,10 @@ class Users(models.Model):
     phone       =   models.CharField(max_length=11, unique=True, verbose_name="手机号")
     address     =   models.TextField(blank=True, verbose_name="地址")
 
+    # null=True表示数据库是否唯恐
+    # blank=True表示admin是否可提交空值
+    remark      =   models.CharField(max_length=200, null=True, blank=True, verbose_name="备注")
+
     # create_time and update_time只读的， 不允许admin修改.
     create_time =   models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
     update_time =   models.DateTimeField(auto_now=True, verbose_name="更新时间")
@@ -43,11 +47,28 @@ class Users(models.Model):
         # https://www.cnblogs.com/haoshine/p/6210210.html
         verbose_name = '用户表'
         '''
-        verbose_name指定在admin管理界面中显示中文；verbose_name表示单数形式的显示，verbose_name_plural表示复数形式的显示；中文的单数和复数一般不作区别。
+        verbose_name指定在admin管理界面中显示中文；
+        verbose_name表示单数形式的显示，
+        verbose_name_plural表示复数形式的显示；中文的单数和复数一般不作区别。
         '''
-        verbose_name_plural = '用户表'
+        verbose_name_plural = verbose_name
 
         ordering = ['update_time', ]
+
+        # 基类，不生成数据表，只供其它子类来继承
+        # abstract = True
+
+        # 设置权限
+        # permissions = (('定义好的权限', '权限说明'), )
+
+        # 联合唯一键, 联合唯一约束
+        # unique_together = ('username', 'phone')
+
+        # 定义模型类属于哪个application
+        # app_label = "users"
+
+        # 定义数据库表空间
+        # db_tablespace
 
     def __str__(self):
         return self.username

@@ -25,7 +25,7 @@ SECRET_KEY = '-8o6l-vizm54p5yu%itf-+75&^@3q8d4&*qx%_v*kb2hf)qiv='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'hello',
     'users',
     'dj_pagination',
+    'school.apps.SchoolConfig',
+    'city.apps.CityConfig',
 ]
 
 MIDDLEWARE = [
