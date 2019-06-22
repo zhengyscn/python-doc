@@ -80,14 +80,16 @@ def displayUser():
     '''
     pass
 
-def outHtml():
+def outputHtml():
     '''
     输出html
     html
     :return:
     '''
+    # https://www.programcreek.com/python/example/1632/jinja2.Environment
     # 配置jinja2在本地文件系统的搜索路径
-    env = Environment(loader=FileSystemLoader('.'))
+    loader = FileSystemLoader('.', followlinks=True)
+    env = Environment(loader=loader)
     template = env.get_template('index.html')
     data = template.render(object_list={})
     print(data)
@@ -100,7 +102,7 @@ def main():
     '''
     pass
 
-    outHtml()
+    outputHtml()
 
 
 if __name__ == '__main__':
