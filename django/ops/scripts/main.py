@@ -95,9 +95,6 @@ def Delete(sql:str):
         cur.close()
         conn.close()
 
-def close():
-    pass
-
 
 def main():
     # 查询

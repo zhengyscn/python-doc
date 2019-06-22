@@ -11,6 +11,8 @@ pytz = "*"
 pymysql = "*"
 ipython = "*"
 dj-pagination = "*"
+jinja2 = "*"
+prettytable = "*"
 
 [requires]
 python_version = "3.6"
