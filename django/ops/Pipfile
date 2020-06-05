@@ -6,7 +6,7 @@ verify_ssl = false
 [dev-packages]
 
 [packages]
-django = "==1.11"
+django = "==3.0.7"
 pytz = "*"
 pymysql = "*"
 ipython = "*"
